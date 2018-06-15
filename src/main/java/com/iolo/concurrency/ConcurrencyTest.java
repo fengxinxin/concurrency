@@ -1,5 +1,6 @@
 package com.iolo.concurrency;
 
+import com.iolo.concurrency.annoations.ThreadNotSafe;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,7 @@ import java.util.concurrent.Semaphore;
 /**
  * Created by FengXinXin on 2018/6/15.
  */
+@ThreadNotSafe
 public class ConcurrencyTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(ConcurrencyTest.class);
     //请求总数
